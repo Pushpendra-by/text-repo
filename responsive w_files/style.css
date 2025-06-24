@@ -1,0 +1,167 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+
+/* #button-s,
+#button-s,
+#button-s,
+#button-s,
+#button-s{
+    color: #fff;
+background: #eb4b4b;
+padding: 5px;
+margin: 9px;border-radius: 50%;
+}
+#button-s:hover{
+    background: green;
+} */
+#clickbutton{
+    width: 30rem;
+    border-radius: 10px;
+    
+}
+#box{
+    border: 2px solid red;
+    /* position: absolute;
+    top: 10rem;
+    left: 5rem; */
+    width: 30rem;
+    background: #000;
+    color:#fff;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 10px;
+    height: 12rem;
+    overflow: auto;
+}
+h1{
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    width: 30rem;
+    border-radius: 10px;
+}
+.red1{color:red;}
+.red2{color:green;}
+.red3{color:yellow;}
+.red4{color:steelblue;}
+.container {
+    display: flex;
+}
+@media only screen and (max-width:357px){
+    .container{
+        flex-direction: column;
+    }
+}
+/* 
+
+body{
+    background: #e08b8b;
+}
+.box{
+    width: 344px;
+    height: 344px;
+    padding: 3px;
+    margin: 3px;
+    background: steelblue;
+}
+.boxs{
+    display: flex;
+    padding: 5px;
+}
+@media only screen and (max-width:420px){
+    body{
+        background: #d0f17b;
+    }
+    .boxs{
+        flex-direction: column;
+    }
+    
+}
+form Events focus() blur() change, select submit
+#box{
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 8rem;
+    background: #e0afaf;
+    width: 22rem;
+}
+#box1{
+    border: 1px solid #000;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 8rem;
+    background: #e0afaf;
+    width: 22rem;
+}
+form input{
+    font-size: 1.2rem;
+    color: rgb(48, 138, 217);
+    font-weight: 500;
+}
+#sub{
+    background: #09b26e;
+    color: aliceblue;
+}
+#test-1{
+    border: 1px solid red;
+    margin-top: 5px;
+    
+} */
+/*
+#test1{
+    border: 1px solid #000;
+    width: 15rem;
+    height: 13rem;
+    padding: 10px;
+    position: relative;
+    top: 0rem;
+    left: 2rem;
+    margin: 10px;
+    background: #dc8b8b;
+}
+
+#test2{
+    border: 1px solid #000;
+    width: 15rem;
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+  
+    margin: 10px;
+    padding: 10px;
+    height: 13rem;
+    background: #d6d206;
+}
+
+
+ .accordion{
+    font-family: arial;
+    width: 28rem;
+    border: 1px solid #000;
+}
+.accordion-title{
+    color: #fff;
+    background: #e65050;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 1s;
+}
+.accordion-title:hover{
+    background: #40bd63;
+}
+.accordion-content{
+    background: #b9c6ef;
+    padding: 10px;
+    display: none;
+}
+.accordion-item.active .accordion-content{
+    display: block;
+} */

@@ -1,0 +1,370 @@
+
+*,
+*:before,
+*:after{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: poppins;
+    margin: 0;
+    display: grid;
+    font-size: 15px;
+}
+nav{
+    background: #000;
+    color: #fff;
+    /* display: inline; */
+    /* position: relative; */
+}
+nav ul {
+    list-style: none;
+    /* position: absolute; */
+}
+nav ul li a{
+    text-decoration: none;
+    /* display:-ms-inline-grid; */
+    /* display: inline; */
+    /* display: table-row; */
+    /* position: absolute; */
+    /* justify-content: space-around; */
+}
+
+
+
+header p{
+    padding: 50px;
+}
+.footer{
+    display: -webkit-flex;
+     display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: #fff;
+  background: #262626;    
+
+}
+.footer > *{
+    flex: 1 100%;
+}
+.l-footer{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+h2{
+   font-weight: 900;
+   font-size: 16px; 
+}
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer li{
+    line-height: 2em;
+}
+.footer a{
+    text-decoration: none;
+
+}
+.r-footer{
+    display: -webkit-flex;
+     display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  flex-flow: row wrap;
+    
+}
+.r-footer > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+.box a{
+    text-decoration: none;
+    color: #999;
+}
+.h-box{
+    column-count: 2;
+    column-gap: 1.25em;
+}
+.b-footer{
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+}
+.l-footer p{
+    padding-right: 20%;
+    color: #999;
+}
+@media screen and (min-width:600px) {
+    .r-footer > *{
+        flex: 1;
+    }
+    .features{
+        flex-grow: 2;
+    }
+    .l-footer{
+        flex: 1 0px;
+    }
+    .r-footer{
+        flex: 2 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+
+ body {
+    padding: 0;
+    margin: 0;
+    /* font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.1px; 
+  display: grid;
+  height: 100vh;
+  /* position: relative; 
+  align-items: center;
+  justify-content: center;
+    box-sizing: border-box;
+    color:#bb9eed;
+}
+.box {
+    box-sizing: border-box;
+    margin: 16px;
+    position: relative;
+    z-index: 1;
+   height: calc(300px - 30px);
+   width: calc(400px - 30px);
+   overflow: hidden;
+   background:#441280;
+
+}
+
+.icon {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease-in;
+    z-index: 1;
+    background: deeppink;
+}
+.box:hover{
+    border-radius: 50%;
+    left: calc(50% - 40px);
+    top: 20px;
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+}
+.fa {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 2.1em;
+    transform: translate(-50%,-50%);
+    transition: font-size .7s ease-in;
+
+}
+.box:hover .fa {
+    font-size: 49px;
+}
+.content {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    height: calc(100% - 100px);
+    padding: 20px 0;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all .5s ease-in;
+    opacity: 0;
+}
+.box:hover .content{
+    top: 100px;
+    opacity: 1;
+}
+.content h3{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 18px;
+}
+.content p{
+    margin: 0;
+    padding: 0%;
+
+}
+ */
+
+
+
+
+/* section {
+    width: 0;
+    height: 0;
+    background: url('.\P-HTML-FILE\assets\images\Nature-Wallpaper.jpg');
+    background-size: cover;
+    background: #326006;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+   transform:translate(-50%,-50%);
+   width: 340px;
+   text-align: center;
+
+}
+.login-form {
+    position: relative;
+    box-sizing: border-box;
+    padding: 60px 30px;
+    transition: .5s;
+}
+.login-form:hover{
+    background: rgba(203, 29, 29, 0.1);
+    box-shadow: 0 0 20px rgba(10, 10, 10, 0.2);
+}
+.login-form h1 {
+    margin: 0 0 20px;
+    color: #095513;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.login-form input {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 26px;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 1.1px;
+    color: rgb(201, 57, 119);
+    text-transform: uppercase;
+    border: none;
+    background: rgba(15, 60, 1, 0.1);
+    font-family: "Libre Baskerville", serif;
+    
+}
+.login-form input::placeholder{
+    color: azure;
+}
+.login-form input[type="submit"] {
+    color: rgb(46, 184, 184);
+   background: #e0ebf7;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+
+}
+.login-form input[type="submit"]:hover {
+background: #005aca;
+
+}
+.login-form a {
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+
+} */
+
+
+
+
+/*section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #b0db78;
+    animation:animateBackgroundC0olor 10s linear infinite;
+}
+@keyframes animateBackgroundC0ol{
+    0% {
+    filter: hue-rotate(0deg);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+        }
+    
+}
+.loading {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+.loading blocks {
+    position: absolute;
+    width: 8px;
+    height:25px;
+    background: #c12f2f;
+    left: 50%;
+    border-radius: 18px;
+    transform:rotate(calc(18deg*var(--i)));
+   transform-origin: 0 125px;
+  animation: animate 1.9s ease-in-out infinite;
+ animation-delay: calc(0.05s *var(--i));
+}
+@keyframes animate {
+   0%,50% {
+    background: #34362d;
+    box-shadow: none;
+   } 
+   50.1%,100% {
+    background: #5349eb;
+   box-shadow: 0 0 5px #020119,
+               0 0 15px #5349eb,
+               0 0 30px #5349eb,
+               0 0 60px #464551,
+               0 0 90px #5349eb;
+   }
+}
+h3{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.2em;
+    letter-spacing: 2.2px;
+    animation: animate 2s ease-in-out infinite;
+  animation-delay: -1s;
+}
+@keyframes animateTest {
+    0%,50% {
+        color: #34362d;
+        text-shadow: none;
+       } 
+       50.1%,100% {
+        color: #5349eb;
+       text-shadow: 0 0 5px #5349eb,
+                   0 0 15px #5349eb,
+                  
+       }
+
+} */
+
+
+
+
+

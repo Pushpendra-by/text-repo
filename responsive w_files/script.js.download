@@ -1,0 +1,92 @@
+$(document).ready(function(){
+    $('#sname,#sclass,#scountry').focus(function(){
+        $(this).css('background-color','red');
+    });
+    $('#sname,#sclass,#scountry').blur(function(){
+        $(this).css('background-color','');
+    });
+    $('#scountry').change(function(){
+        // $(this).css('background-color','yellow');
+        var a = $(this).val();
+        $('#test-1').html(a);
+    });
+    $('#sname,#sclass').select(function(){
+        $(this).css('background-color','blue') ;
+    });
+    $('#sform').submit(function(){
+        alert("Form Submitted");
+        // $(this).css('background-color','blue') ;
+    });
+
+});
+
+$(document).ready(function(){
+    $('#box').scroll(function(){
+        // console.clear();
+        console.log("You are scrolling");
+    })
+})
+$(document).ready(function(){
+    $('#clickbutton').click(function(){
+        $('#box h2 p').text("Hellow Yahoo baba");
+          
+        $('#box p').html("this <b>is name</b> text..")
+        $('#box h2').attr("class", "red3");
+        $('#box h2').html("Welcome to<marquee>Kanpur Nagar...</marquee>");
+    })
+})
+
+// meta j query
+$("p").css("background-color","steelblue");
+$("#para p").css('border','2px solid green','background-color');
+$("h2").css('background-color','lightgray');
+$("#para").css('background-color','hotpink');
+$("#clickbutton").click(function(){
+    alert('Button clicked!');
+});
+$("#para").hover(function(){
+    $(this).css('background-color','yellow');
+    $(this).css('font-size','2rem');
+    $(this).html("It's paragraph styled by using <i><b>J.Query</b></i>")
+});
+$("#para").mouseleave(function(){
+    $(this).css('background-color','khaki');
+});
+$("#clickbutton").hover(function(){
+    $('#clickbutton').css('background-color','green');
+});
+$("#clickbutton").mouseleave(function(){
+    $('#clickbutton').css('background-color','red');
+});
+$("h1").hover(function(){
+    $("h1").css("background-color","green");
+});
+$("h1").mouseleave(function(){
+    $('h1').css('background-color','teal');
+});
+// DOM Manipulate
+// html,text,append(to add in last),prepend(to add in first(begnning)) like method
+// We can easly hover,mouseenter,mouseleave,contextmenu,click,dblclick,ketpress,keydown,keyup, by using j query
+$('p').prepend("<li>New paragraph content by prepend</li>");
+$('p').append("<li>New paragraph content by append</li>");
+// effects
+// $(".btn1").mouseleave(function(){
+//     $("p").toggle();
+// });
+// $(".btn2").mouseenter(function(){
+//     $("h3").fadeOut(1000);
+// });
+// $(".btn3").click(function(){
+//     $("h3").fadeIn(1000);
+// });
+// $(".btn4").click(function(){
+//     $("h3").hide(1000);
+// });
+// $(".btn5").click(function(){
+//     $("h3").show(1000);
+// });
+
+// // j query method
+// $("p").parent().css("background-color","steelblue");
+//    $("div").children().css("color","yellow");
+//     $('h3').siblings().css("border", '2px solid red')

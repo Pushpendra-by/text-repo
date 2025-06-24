@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:3000/login.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./CALCULATOR_files/___vscode_livepreview_injected_script"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CALCULATOR_files/style.css">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <!-- <div id="box"></div> -->
+    <!-- <script src="/01.js"></script> -->
+    <!-- <script>
+        var target = document.querySelector('#box');
+        target.addEventListener('mousedown',function(e){
+            console.clear();
+            // var meta = e.metaKey; 
+//  var text = "You Pressed button : " + e.button;
+
+    // console.log(text);
+    // if(meta){
+    //     console.log('You Pressed Meta Key.');
+    // }
+    // else{
+    //     console.log('You Not Pressed Meta Key.')
+    // }
+    // //  var x = e.clientX;
+    //  var y = e.clientY;
+     
+    //  console.log("ClientX :" + x);
+    //  console.log("ClientY :" + y);
+})
+
+    </script>
+        <!-- <button onclick="backFunction()">Back</button>
+<button onclick="forwardFunction()">forword</button> --> 
+<script>
+    function pick(val){
+        document.getElementById("a").value +=val;
+    }
+    function solve(){
+       var x=document.getElementById("a").value;
+       var y=eval(x);
+       document.getElementById("a").value=y;
+    }
+
+    function clr(){
+        document.getElementById("a").value = " ";
+    }
+</script>
+
+<marquee><h2>CALCULATOR</h2></marquee><table>
+    <tbody><tr> 
+        
+        <th colspan="3"><input type="text" id="a"> </th>
+        <th><input id="btn_red" type="button" value="AC" onclick="clr()"> </th>
+    </tr>
+    <tr>
+        <th><input type="button" value="1" onclick="pick(1)"> </th>
+        <th><input type="button" value="2" onclick="pick(2)"> </th>
+        <th><input type="button" value="3" onclick="pick(3)"> </th>
+        <th><input type="button" value="/" onclick="pick(&#39;/&#39;)"> </th>
+        <!-- <th><input type="button" value="/" onclick="pick('/')"> </th> -->
+    </tr>
+
+    <tr>
+        <th><input type="button" value="4" onclick="pick(4)"> </th>
+        <th><input type="button" value="5" onclick="pick(5)"> </th>
+        <th><input type="button" value="6" onclick="pick(6)"> </th>
+        <th><input type="button" value="*" onclick="pick(&#39;*&#39;)"> </th>
+    </tr>
+    <tr>
+        <th><input type="button" value="7" onclick="pick(7)"> </th>
+        <th><input type="button" value="8" onclick="pick(8)"> </th>
+        <th><input type="button" value="9" onclick="pick(9)"> </th>
+        <th><input type="button" value="-" onclick="pick(&#39;-&#39;)"> </th>
+    </tr>
+
+    <tr>
+        <th><input type="button" value="." onclick="pick(&#39;.&#39;)"> </th>
+        <th><input type="button" value="0" onclick="pick(0)"> </th>
+        <th><input type="button" value="=" onclick="solve()" id="btn-blue"> </th>
+        <th><input type="button" value="+" onclick="pick(&#39;+&#39;)"> </th>
+    </tr>
+</tbody></table>
+
+
+
+</body></html>

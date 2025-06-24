@@ -6,91 +6,46 @@
     <link rel="stylesheet" href="https://cheatography.com/l3home/cheat-sheets/w3-css/pdf/?last=1493340891">
     <link rel="stylesheet" href="style.css">
     <title>My css web page</title>
+       
 </head>
-<style>
-    
-</style>
 <body>
     <script src="script.js"></script>
     <div class="navbar">
-        <p class="para w3-left">Fronted Practice</p>
-        <ul>
+               <ul>
             <li><a href="#" onclick="showPage('home')">Home</a> </li>
             <li><a href="#" onclick="showPage('project')">Projects</a> </li>
             <li><a href="#" onclick="showPage('FAQ')">FAQ</a> </li>
         </ul>
     </div>
-     <!-- <img class="image" src="..\assets\images\project-collage.png">  -->
-    <div class="homeSection">
-  
-    <div id="box"> 
-        <img class="image" src="..\assets\images\project-collage.png">
-    </div>
-    <div class="text">
-        <h1 class="head">Become a better <br>fronted developer.</h1>
-        <p class="para1">Take your fronted skills to the next level<br> by recreating <b>real website</b> from<b>real companies.</b></p>
-        <br>
-        <p class="para1">The perfect type of Practice for developers of<br> all skill levels. Are you up for the challenge ?</p>
-        <br>
-        <button class="btn-white">View Projects</button>
-        <button class="btn-bisque">Learn more</button>
-    </div>
-    </div>
-    <div class="box1">
-        <h1 class="center-h1">Fronted practice provides you with <br>the inspiration and resources to create <br>beautiful website.</h1>
-        <br>
-        <p class="center-p">Here are some ways you can benefit<br> from using our platform:</p>
-        <div class="sub-left">
-             <div class="sub">
-                <img  class="sub-image" src="\assets\images\f990db40-ba07-479c-b52c-3b2c6caabc89_domain.avif">
-            <p class="paragraph">
-                Enhance your skills by building <br>real website selected<br> for their education value.
-            </p>
-            </div>
-        <div class="sub">
-            <img class="sub-image" src="\assets\images\65eee214-bbfe-4f9e-ad0f-70f7785679be_layout.avif">
-       <p class="right">
-        Text and improve your fronted<br> knowledge through various <br>challenges.
-       </p> 
-        </div>    
-        </div>
-       <div class="sub-right">
-       <div class="sub">
-            <img class="sub-image" src="\assets\images\8d3c1f70-6ff3-41f0-b9d6-3b46f2899359_pantone.avif">
-       <p class="right">
-       Use the provieded color palettes for<br> each projects to save time.
-       </p> 
-        </div>    
-       
-        <div class="sub">
-            <img class="sub-image" src="\assets\images\d6e88860-7347-4d32-acf8-aa1f01db8685_idea.avif">
-       <p class="right">
-       Find helpful, curated resources to<br> tacle challenging element.
-       </p>
-        </div>    
-    </div>
-    </div>
-    <br>
-    
-    <div id="text1">
-<h2 class="w3-xlarge w3-padding w3-section">Ready to become a better<br> fronted developer</h2>
-        <button class="button">Get Started</button>          
-    </div>   
-    
-    <br><br>
-    <div class="box2"> 
-    <div class="w3-text-white w3-panel w3-padding">
-        <br><br>
-        <p class="pc w3-center">Frontend Practice - © 2025</p>
-    <h2 class="display-link">
-        <p><a href="#"></a>Home</p> 
-        <p><a href="#">Projects</a>Projects</p>
-        <p><a href="#"> </a>FAQ</p>
-       
-  
-    </h2> 
-    </div>
 
-    </div>
+    <h1>Accordion</h1>
+   <button class="accordion">Section 1</button>
+<div class="panel">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aspernatur debitis distinctio consectetur consequuntur cum mollitia laborum consequatur. Corporis deleniti necessitatibus ipsam.</p>
+</div>
+     <button class="accordion">Section 2</button>
+<div class="panel">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aspernatur debitis distinctio consectetur consequuntur cum mollitia laborum consequatur. Corporis deleniti necessitatibus ipsam.</p>
+</div>
+  <button class="accordion">Section 3</button>
+<div class="panel">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aspernatur debitis distinctio consectetur consequuntur cum mollitia laborum consequatur. Corporis deleniti necessitatibus ipsam.</p>
+</div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click",function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHight) {
+            panel.style.axHight = 'null';
+        } else {
+            panel.style.maxHight = panel.scrollHight + "px";
+        }
+    })
+}
+
+</script>
 </body>
 </html>

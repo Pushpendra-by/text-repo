@@ -1,0 +1,53 @@
+// var a = 0;
+// clearInterval(Anim, 50);
+// function Anim(){
+//     a = a + 10;
+//     console.log(a);
+// }
+// var target = document.getElementById("test");
+// target.style.marginLeft = a + 'px';
+
+// var firstName = "ram";
+// console.log(firstName);
+
+// var id = setTimeout(function(){
+  
+// function Anim(){
+//     let traget = document.getElementById("test");
+//       traget.style.width = "500px";
+//     //    console.log("hellow"); 
+//    }  
+// }, 5000);
+
+
+// function stopAnimation(){
+//    clearTimeout(id); 
+// // }
+
+// function resizeFunction(){
+
+//   var iWidth = window.innerWidth;
+//   console.log('Inner Width : ' + iWidth);
+  
+//   var oWidth = window.outerwidth;
+//   console.log('Outer Width : ' + oWidth);
+  
+// }
+// function scrollWindow(){
+//   window.scrollBy(0,-20);
+
+  
+// }
+// var myWindow;
+
+// function closeWindow(){
+//   myWindow.close();
+// }
+
+
+
+
+
+
+
+
